@@ -956,3 +956,9 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 31ms (Views: 16.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/posts/new" for 65.93.175.191 at 2018-07-14 20:16:54 +0000
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from load at /usr/local/rvm/gems/ruby-2.3.1/bin/shotgun:23)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (7.9ms)

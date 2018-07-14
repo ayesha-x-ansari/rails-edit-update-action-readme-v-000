@@ -992,3 +992,14 @@ Redirected to http://67.205.188.72:55768/posts/3
 Completed 302 Found in 31ms (ActiveRecord: 3.8ms)
 
 
+Started GET "/posts/3" for 65.93.175.191 at 2018-07-14 20:18:15 +0000
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from load at /usr/local/rvm/gems/ruby-2.3.1/bin/shotgun:23)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 284ms (Views: 258.0ms | ActiveRecord: 1.0ms)
+
+
